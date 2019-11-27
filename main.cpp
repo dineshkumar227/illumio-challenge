@@ -13,8 +13,8 @@ using std::ostream;
 void initialize_map(map<Address, Address, std::greater<Address>>& nat_map, istream& input_stream) {
 	string line;
 	while (getline(input_stream, line)) {
-		Address a1(line.substr(0, line.find(":")));
-		Address a2(line.substr(line.find(":") + 1, line.length() - 1));
+		Address a1(line.substr(0, line.find(",")));
+		Address a2(line.substr(line.find(",") + 1, line.length() - 1));
 		nat_map.insert(std::make_pair(a1, a2));
 	}
 }
