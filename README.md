@@ -8,7 +8,7 @@ My coding challenge submission for the Intern System Software Engineer, VEN 2020
     
 * Data Structure used: Ordered map in reverse order
     * Maps are efficient for looking up matches. 
-    * To find matches with addresses iteration is required, which is why we cannot use an unordered map even though it is faster.
+    * To find matches with addresses iteration is required, which is why we cannot use an unordered map even though it is faster (O(logN) vs O(1)).
     * By ordering maps in reverse, more specific addresses are naturally placed higher than wildcards when iterating through the elements (192.168.1.1:8080 will be placed before *:8080).
 
 ## Things I would have worked on:
