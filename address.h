@@ -11,5 +11,5 @@ class Address {
 	friend bool operator>(const Address& a, const Address& b);
 	friend bool operator<(const Address& a, const Address& b);
 	friend std::ostream& operator<<(std::ostream& os, const Address& a);
-	static bool isMatch(Address a, Address b);
-}
+	static bool isMatch(const Address& a, const Address& b);
+};

@@ -13,7 +13,7 @@ bool operator<(const Address& a, const Address& b) {
 	return (a.ip + a.port) < (b.ip + b.port);
 }
 
-std::ostream& operator<<(std::ostream& os, const Address& b) {
+std::ostream& operator<<(std::ostream& os, const Address& a) {
 	os<<a.ip<<":"<<a.port;
 	return os;
 }
